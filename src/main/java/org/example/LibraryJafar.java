@@ -1,6 +1,8 @@
 package org.example;
 
 import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
@@ -20,7 +22,19 @@ public class LibraryJafar {
         /**/
     }
 
+    /**Displaying reports in Logcat*/
+    public static void showReportLogCat(){
 
+        String filename =  "build/reports/dependency-check-report.html"; // مسیر فایل مورد نظر درون پوشه libs
+        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line); // یا هر کار دیگری که می‌خواهید با خطوط فایل انجام دهید
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+        }
+    }
 
     /**This runShellCommand method is used to execute terminal commands such as: git init*/
     public static void runShellCommand(String command) {
@@ -125,5 +139,6 @@ public class LibraryJafar {
         runShellCommandGradlew("./gradlew dependencyCheckAnalyze --scan");
     }
 }
+
 
 
