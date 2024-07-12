@@ -21,7 +21,7 @@ public class LibraryJafar {
      */
     public static void scanLibrary() {
         //Coming Soon
-        /**/  
+        /**/
     }
 
     public static void scanLibrary1() {
