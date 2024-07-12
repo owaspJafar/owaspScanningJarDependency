@@ -16,16 +16,25 @@ public class LibraryJafar {
         dependencyCheckAnalyze();
     }
 
-    /**Enter the name of the Library dependency and let it scan*/
-    public static void scanLibrary(){
+    /**
+     * Enter the name of the Library dependency and let it scan
+     */
+    public static void scanLibrary() {
+        //Coming Soon
+        /**/  
+    }
+
+    public static void scanLibrary1() {
         //Coming Soon
         /**/
     }
 
-    /**Displaying reports in Logcat*/
-    public static void showReportLogCat(){
+    /**
+     * Displaying reports in Logcat
+     */
+    public static void showReportLogCat() {
 
-        String filename =  "build/reports/dependency-check-report.html"; // مسیر فایل مورد نظر درون پوشه libs
+        String filename = "build/reports/dependency-check-report.html"; // مسیر فایل مورد نظر درون پوشه libs
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -36,7 +45,9 @@ public class LibraryJafar {
         }
     }
 
-    /**This runShellCommand method is used to execute terminal commands such as: git init*/
+    /**
+     * This runShellCommand method is used to execute terminal commands such as: git init
+     */
     public static void runShellCommand(String command) {
         Process process;
         try {
@@ -64,9 +75,11 @@ public class LibraryJafar {
         }
     }
 
-    /**This runShellCommandGradlew method takes a string from the user,
-     *  which can be anything.
-     *  Like : ./gradlew dependencyCheckAnalyze*/
+    /**
+     * This runShellCommandGradlew method takes a string from the user,
+     * which can be anything.
+     * Like : ./gradlew dependencyCheckAnalyze
+     */
     public static void runShellCommandGradlew(String command) {
         String os = System.getProperty("os.name").toLowerCase();
         ProcessBuilder processBuilder = new ProcessBuilder();
@@ -102,40 +115,52 @@ public class LibraryJafar {
     }
 
 
-    /**Generates various reports that include details of detected vulnerabilities,
-     *  the extent of the risk, and suggested solutions to fix them.*/
-    public static void dependencyCheckAnalyze(){
+    /**
+     * Generates various reports that include details of detected vulnerabilities,
+     * the extent of the risk, and suggested solutions to fix them.
+     */
+    public static void dependencyCheckAnalyze() {
         runShellCommandGradlew("./gradlew dependencyCheckAnalyze");
     }
 
-    /**Updating the database is necessary to identify new vulnerabilities and
-     * improve the accuracy of the analysis.*/
-    public static void dependencyCheckUpdate(){
+    /**
+     * Updating the database is necessary to identify new vulnerabilities and
+     * improve the accuracy of the analysis.
+     */
+    public static void dependencyCheckUpdate() {
         runShellCommandGradlew("./gradlew dependencyCheckUpdate");
     }
 
-    /**This command clears the local database of vulnerabilities.
-     *  This is useful when you want to update the local database from scratch.*/
-    public static void dependencyCheckPurge(){
+    /**
+     * This command clears the local database of vulnerabilities.
+     * This is useful when you want to update the local database from scratch.
+     */
+    public static void dependencyCheckPurge() {
         runShellCommandGradlew("./gradlew dependencyCheckPurge");
     }
 
-    /**This command creates a consolidated report of several projects in a multi-project.
-     *  For projects that contain multiple modules, this command provides an overall report.*/
-    public static void dependencyCheckAggregate(){
+    /**
+     * This command creates a consolidated report of several projects in a multi-project.
+     * For projects that contain multiple modules, this command provides an overall report.
+     */
+    public static void dependencyCheckAggregate() {
         runShellCommandGradlew("./gradlew dependencyCheckAggregate");
     }
 
-    /**This command is similar to dependencyCheckAnalyze,
-     *  but runs with a higher information level that provides more detail in the output.
-     *  This is useful for debugging and more detailed analysis.*/
-    public static void dependencyCheckAnalyzeInfo(){
+    /**
+     * This command is similar to dependencyCheckAnalyze,
+     * but runs with a higher information level that provides more detail in the output.
+     * This is useful for debugging and more detailed analysis.
+     */
+    public static void dependencyCheckAnalyzeInfo() {
         runShellCommandGradlew("./gradlew dependencyCheckAnalyze --info");
     }
 
-    /**This command is similar to dependencyCheckAnalyze but with the scan feature,
-     *  which provides additional information about the analysis process and dependencies.*/
-    public static void dependencyCheckAnalyzeScan(){
+    /**
+     * This command is similar to dependencyCheckAnalyze but with the scan feature,
+     * which provides additional information about the analysis process and dependencies.
+     */
+    public static void dependencyCheckAnalyzeScan() {
         runShellCommandGradlew("./gradlew dependencyCheckAnalyze --scan");
     }
 }
