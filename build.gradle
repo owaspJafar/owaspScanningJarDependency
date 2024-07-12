@@ -12,6 +12,8 @@ plugins {
     id 'java'
     id 'org.owasp.dependencycheck' version '6.2.2'
 }
+
+
 apply plugin: 'org.owasp.dependencycheck'
 
 group 'org.example'
