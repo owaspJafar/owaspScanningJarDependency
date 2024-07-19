@@ -16,6 +16,11 @@ public class LibraryJafar {
         dependencyCheckAnalyze();
     }
 
+
+
+
+
+
     /**Enter the name of the Library dependency and let it scan*/
     public static void scanLibrary(){
         //Coming Soon
@@ -25,11 +30,11 @@ public class LibraryJafar {
     /**Displaying reports in Logcat*/
     public static void showReportLogCat(){
 
-        String filename =  "build/reports/dependency-check-report.html"; // مسیر فایل مورد نظر درون پوشه libs
+        String filename =  "build/reports/dependency-check-report.html";
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
             while ((line = br.readLine()) != null) {
-                System.out.println(line); // یا هر کار دیگری که می‌خواهید با خطوط فایل انجام دهید
+                System.out.println(line);
             }
         } catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
@@ -41,7 +46,6 @@ public class LibraryJafar {
         Process process;
         try {
             process = Runtime.getRuntime().exec(command);
-            // خواندن خروجی دستور
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
             while ((line = reader.readLine()) != null) {
@@ -49,7 +53,6 @@ public class LibraryJafar {
             }
             reader.close();
 
-            // بررسی کد خروجی
             int exitCode = process.waitFor();
             if (exitCode == 0) {
                 System.out.println("Command executed successfully:");
@@ -70,7 +73,6 @@ public class LibraryJafar {
     public static void runShellCommandGradlew(String command) {
         String os = System.getProperty("os.name").toLowerCase();
         ProcessBuilder processBuilder = new ProcessBuilder();
-
         if (os.contains("win")) {
             // If on Windows, use cmd.exe and gradlew.bat
             processBuilder.command("cmd.exe", "/c", command.replace("./gradlew", "gradlew.bat"));
@@ -78,21 +80,17 @@ public class LibraryJafar {
             // If on Unix-like system, use bash
             processBuilder.command("bash", "-c", command);
         }
-
         try {
             Process process = processBuilder.start();
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             BufferedReader errorReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
-
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
-
             while ((line = errorReader.readLine()) != null) {
                 System.err.println(line);
             }
-
             int exitCode = process.waitFor();
             System.out.println("\nExited with code: " + exitCode);
 
@@ -100,8 +98,6 @@ public class LibraryJafar {
             e.printStackTrace();
         }
     }
-
-
     /**Generates various reports that include details of detected vulnerabilities,
      *  the extent of the risk, and suggested solutions to fix them.*/
     public static void dependencyCheckAnalyze(){

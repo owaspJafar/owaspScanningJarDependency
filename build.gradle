@@ -4,17 +4,18 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'org.owasp:dependency-check-gradle:3.1.2'
+       classpath 'org.owasp:dependency-check-gradle:3.1.2'
+
     }
 }
 
 plugins {
     id 'java'
-    id 'org.owasp.dependencycheck' version '6.2.2'
+     id 'org.owasp.dependencycheck' version '6.2.2'
 }
 
 
-apply plugin: 'org.owasp.dependencycheck'
+ apply plugin: 'org.owasp.dependencycheck'
 
 group 'org.example'
 version '1.0'
@@ -31,12 +32,24 @@ jar {
 repositories {
     mavenCentral()
 }
+dependencyCheck {
+    failBuildOnCVSS = 7.0
+    //suppressionFile = file('dependency-check-suppression.xml')
+    formats = ['HTML', 'XML','json']
+    outputDirectory = file('build/jafar-report')
+
+
+}
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     implementation files('libs/makeLibrary.jar')
+    add("implementation", "com.fasterxml.jackson:jackson-bom:2.16.1")
 
+    // org.owasp.dependencycheck needs these versions. Other plugins pull in older versions..
+    add("implementation", "org.apache.commons:commons-lang3:3.14.0")
+    add("implementation", "org.apache.commons:commons-text:1.11.0")
 }
 
 test {
