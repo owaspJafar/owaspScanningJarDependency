@@ -9,7 +9,7 @@ public class Main {
 
       // LibraryJafar.dependencyCheckAnalyze();
         //LibraryJafar.showReportJsonLogCat();
-       LibraryJafar.jsonParserJafar( );
+       LibraryJafar.reportJsonParserJafar( );
 
 
 
