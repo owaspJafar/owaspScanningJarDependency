@@ -5,6 +5,15 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../newLibrary" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../newLibrary" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
@@ -14,10 +23,10 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../newLibrary" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/OwaspJar" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../newLibrary" />
+            <option value="$PROJECT_DIR$/OwaspJar" />
           </set>
         </option>
       </GradleProjectSettings>

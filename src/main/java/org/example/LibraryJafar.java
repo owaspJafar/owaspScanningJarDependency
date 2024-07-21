@@ -27,9 +27,26 @@ public class LibraryJafar {
     /**
      * Enter the name of the Library dependency and let it scan
      */
-    public static void scanLibrary() {
-        //Coming Soon
-        /**/
+    public static void scanLibrary(String nameLibrary) {
+        ArrayList<String> listLib=new ArrayList<>();
+        listLib.addAll(reportJsonParserJafar());
+        logger.info("\n\n\n\n\n");
+
+
+        boolean isVulnerable = false;
+        for (String item : listLib) {
+            if (item.contains(nameLibrary)) {
+                isVulnerable = true;
+                break;
+            }
+        }
+
+
+        if (isVulnerable){
+            logger.info("OWASP scanning jafar: "+nameLibrary +"---------> This library is vulnerable");
+        }else {
+            logger.info("OWASP scanning jafar: "+nameLibrary +"---------> This library is not vulnerable");
+        }
     }
 
     /**
@@ -48,8 +65,12 @@ public class LibraryJafar {
         }
     }
 
-    /**Analyzing the Jason file and separating vulnerable and invulnerable libraries*/
-    public static void reportJsonParserJafar( ){
+    /**
+     * Analyzing the Jason file and separating vulnerable and invulnerable libraries
+     *
+     * @return
+     */
+    public static ArrayList<String> reportJsonParserJafar( ){
         if (readFile()!=null) {
             JSONObject jsonObject = new JSONObject(Objects.requireNonNull(readFile()));
 
@@ -58,6 +79,7 @@ public class LibraryJafar {
             logger.info("OWASP scanning jafar: List of books that are vulnerable");
 
             ArrayList<String> listNot = new ArrayList<>();
+            ArrayList<String> listVulnerabilities = new ArrayList<>();
 
             for (int i = 0; i < dependencies.length(); i++) {
                 JSONObject dependenciesJsonObject = dependencies.getJSONObject(i);
@@ -69,6 +91,7 @@ public class LibraryJafar {
                         String severity = vulnerabilities.getJSONObject(0).getString("severity");
                         String fileName = dependenciesJsonObject.getString("fileName");
 
+                        listVulnerabilities.add(fileName);
                         logger.info("OWASP scanning jafar:\t" + fileName + "\t-------------------->      Highest Severity = " + severity);
 
                     } else {
@@ -88,7 +111,9 @@ public class LibraryJafar {
             for (String s : listNot) {
                 logger.info(s);
             }
+            return listVulnerabilities;
         }
+        return null;
     }
     /**Reading the report.json file*/
     private static String readFile( ) {
