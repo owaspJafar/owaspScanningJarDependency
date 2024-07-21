@@ -1,1 +1,4078 @@
-{"reportSchema": "1.1","scanInfo": {"engineVersion": "6.2.2","dataSource": [{"name": "NVD CVE Checked","timestamp": "2024-07-17T18:42:02"},{"name": "NVD CVE Modified","timestamp": "2024-07-17T17:30:01"},{"name": "VersionCheckOn","timestamp": "2024-07-17T18:42:02"}]},"projectInfo": {"name": "root project 'makeLibrary'","groupID":"org.example","artifactID":"makeLibrary","version":"1.0","reportDate": "2024-07-17T15:33:06.156977900Z","credits": {"NVD": "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov","NPM": "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories","RETIREJS": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/","OSSINDEX": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"}},"dependencies": [{"isVirtual": false,"fileName": "commons-lang3-3.14.0.jar","filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-lang3\\3.14.0\\1ed471194b02f2c6cb734a0cd6f6f107c673afae\\commons-lang3-3.14.0.jar","md5": "4e5c3f5e6b0b965ef241d7d72ac8971f","sha1": "1ed471194b02f2c6cb734a0cd6f6f107c673afae","sha256": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c","description": "\n  Apache Commons Lang, a package of Java utility classes for the\n  classes that are in java.lang's hierarchy, or are considered to be so\n  standard as to justify existence in java.lang.\n  ","license": "https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt","projectReferences": ["makeLibrary:runtimeClasspath","makeLibrary:compileClasspath"],"evidenceCollected": {"vendorEvidence": [{"type": "vendor","confidence": "HIGH","source": "file","name": "name","value": "commons-lang3"},{"type": "vendor","confidence": "HIGHEST","source": "gradle","name": "groupid","value": "org.apache.commons"},{"type": "vendor","confidence": "HIGHEST","source": "jar","name": "package name","value": "apache"},{"type": "vendor","confidence": "HIGHEST","source": "jar","name": "package name","value": "commons"},{"type": "vendor","confidence": "HIGHEST","source": "jar","name": "package name","value": "lang3"},{"type": "vendor","confidence": "MEDIUM","source": "Manifest","name": "automatic-module-name","value": "org.apache.commons.lang3"},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "build-jdk-spec","value": "21"},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "bundle-docurl","value": "https:\/\/commons.apache.org\/proper\/commons-lang\/"},{"type": "vendor","confidence": "MEDIUM","source": "Manifest","name": "bundle-symbolicname","value": "org.apache.commons.lang3"},{"type": "vendor","confidence": "HIGH","source": "Manifest","name": "Implementation-Vendor","value": "The Apache Software Foundation"},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "multi-release","value": "true"},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "require-capability","value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "specification-vendor","value": "The Apache Software Foundation"},{"type": "vendor","confidence": "LOW","source": "pom","name": "artifactid","value": "commons-lang3"},{"type": "vendor","confidence": "HIGHEST","source": "pom","name": "groupid","value": "apache.commons"},{"type": "vendor","confidence": "HIGH","source": "pom","name": "name","value": "Apache Commons Lang"},{"type": "vendor","confidence": "LOW","source": "pom","name": "parent-artifactid","value": "commons-parent"},{"type": "vendor","confidence": "MEDIUM","source": "pom","name": "parent-groupid","value": "org.apache.commons"},{"type": "vendor","confidence": "HIGHEST","source": "pom","name": "url","value": "https:\/\/commons.apache.org\/proper\/commons-lang\/"}],"productEvidence": [{"type": "product","confidence": "HIGH","source": "file","name": "name","value": "commons-lang3"},{"type": "product","confidence": "HIGHEST","source": "gradle","name": "artifactid","value": "commons-lang3"},{"type": "product","confidence": "HIGHEST","source": "jar","name": "package name","value": "apache"},{"type": "product","confidence": "HIGHEST","source": "jar","name": "package name","value": "commons"},{"type": "product","confidence": "HIGHEST","source": "jar","name": "package name","value": "lang3"},{"type": "product","confidence": "MEDIUM","source": "Manifest","name": "automatic-module-name","value": "org.apache.commons.lang3"},{"type": "product","confidence": "LOW","source": "Manifest","name": "build-jdk-spec","value": "21"},{"type": "product","confidence": "LOW","source": "Manifest","name": "bundle-docurl","value": "https:\/\/commons.apache.org\/proper\/commons-lang\/"},{"type": "product","confidence": "MEDIUM","source": "Manifest","name": "Bundle-Name","value": "Apache Commons Lang"},{"type": "product","confidence": "MEDIUM","source": "Manifest","name": "bundle-symbolicname","value": "org.apache.commons.lang3"},{"type": "product","confidence": "HIGH","source": "Manifest","name": "Implementation-Title","value": "Apache Commons Lang"},{"type": "product","confidence": "LOW","source": "Manifest","name": "multi-release","value": "true"},{"type": "product","confidence": "LOW","source": "Manifest","name": "require-capability","value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""},{"type": "product","confidence": "MEDIUM","source": "Manifest","name": "specification-title","value": "Apache Commons Lang"},{"type": "product","confidence": "HIGHEST","source": "pom","name": "artifactid","value": "commons-lang3"},{"type": "product","confidence": "HIGHEST","source": "pom","name": "groupid","value": "apache.commons"},{"type": "product","confidence": "HIGH","source": "pom","name": "name","value": "Apache Commons Lang"},{"type": "product","confidence": "MEDIUM","source": "pom","name": "parent-artifactid","value": "commons-parent"},{"type": "product","confidence": "MEDIUM","source": "pom","name": "parent-groupid","value": "org.apache.commons"},{"type": "product","confidence": "MEDIUM","source": "pom","name": "url","value": "https:\/\/commons.apache.org\/proper\/commons-lang\/"}],"versionEvidence": [{"type": "version","confidence": "HIGH","source": "file","name": "version","value": "3.14.0"},{"type": "version","confidence": "HIGHEST","source": "gradle","name": "version","value": "3.14.0"},{"type": "version","confidence": "HIGH","source": "Manifest","name": "Bundle-Version","value": "3.14.0"},{"type": "version","confidence": "HIGH","source": "Manifest","name": "Implementation-Version","value": "3.14.0"},{"type": "version","confidence": "LOW","source": "pom","name": "parent-version","value": "3.14.0"},{"type": "version","confidence": "HIGHEST","source": "pom","name": "version","value": "3.14.0"}]},"packages": [{"id": "pkg:maven\/org.apache.commons\/commons-lang3@3.14.0","confidence": "HIGH","url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/org.apache.commons\/commons-lang3@3.14.0?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"}],"vulnerabilityIds": [{"id": "cpe:2.3:a:apache:commons_net:3.14.0:*:*:*:*:*:*:*","confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Acommons_net&cpe_version=cpe%3A%2F%3Aapache%3Acommons_net%3A3.14.0"}]},{"isVirtual": false,"fileName": "commons-text-1.11.0.jar","filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-text\\1.11.0\\2bb044b7717ec2eccaf9ea7769c1509054b50e9a\\commons-text-1.11.0.jar","md5": "ebfec4f77cc595c518d655f7e68346be","sha1": "2bb044b7717ec2eccaf9ea7769c1509054b50e9a","sha256": "2acf30a070b19163d5a480eae411a281341e870020e3534c6d5d4c8472739e30","description": "Apache Commons Text is a library focused on algorithms working on strings.","license": "https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt","projectReferences": ["makeLibrary:runtimeClasspath","makeLibrary:compileClasspath"],"evidenceCollected": {"vendorEvidence": [{"type": "vendor","confidence": "HIGH","source": "file","name": "name","value": "commons-text"},{"type": "vendor","confidence": "HIGHEST","source": "gradle","name": "groupid","value": "org.apache.commons"},{"type": "vendor","confidence": "HIGHEST","source": "jar","name": "package name","value": "apache"},{"type": "vendor","confidence": "HIGHEST","source": "jar","name": "package name","value": "commons"},{"type": "vendor","confidence": "HIGHEST","source": "jar","name": "package name","value": "text"},{"type": "vendor","confidence": "MEDIUM","source": "Manifest","name": "automatic-module-name","value": "org.apache.commons.text"},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "build-jdk-spec","value": "21"},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "bundle-docurl","value": "https:\/\/commons.apache.org\/proper\/commons-text"},{"type": "vendor","confidence": "MEDIUM","source": "Manifest","name": "bundle-symbolicname","value": "org.apache.commons.text"},{"type": "vendor","confidence": "HIGH","source": "Manifest","name": "Implementation-Vendor","value": "The Apache Software Foundation"},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "multi-release","value": "true"},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "require-capability","value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""},{"type": "vendor","confidence": "LOW","source": "Manifest","name": "specification-vendor","value": "The Apache Software Foundation"},{"type": "vendor","confidence": "LOW","source": "pom","name": "artifactid","value": "commons-text"},{"type": "vendor","confidence": "HIGHEST","source": "pom","name": "groupid","value": "apache.commons"},{"type": "vendor","confidence": "HIGH","source": "pom","name": "name","value": "Apache Commons Text"},{"type": "vendor","confidence": "LOW","source": "pom","name": "parent-artifactid","value": "commons-parent"},{"type": "vendor","confidence": "MEDIUM","source": "pom","name": "parent-groupid","value": "org.apache.commons"},{"type": "vendor","confidence": "HIGHEST","source": "pom","name": "url","value": "https:\/\/commons.apache.org\/proper\/commons-text"}],"productEvidence": [{"type": "product","confidence": "HIGH","source": "file","name": "name","value": "commons-text"},{"type": "product","confidence": "HIGHEST","source": "gradle","name": "artifactid","value": "commons-text"},{"type": "product","confidence": "HIGHEST","source": "jar","name": "package name","value": "apache"},{"type": "product","confidence": "HIGHEST","source": "jar","name": "package name","value": "commons"},{"type": "product","confidence": "HIGHEST","source": "jar","name": "package name","value": "text"},{"type": "product","confidence": "MEDIUM","source": "Manifest","name": "automatic-module-name","value": "org.apache.commons.text"},{"type": "product","confidence": "LOW","source": "Manifest","name": "build-jdk-spec","value": "21"},{"type": "product","confidence": "LOW","source": "Manifest","name": "bundle-docurl","value": "https:\/\/commons.apache.org\/proper\/commons-text"},{"type": "product","confidence": "MEDIUM","source": "Manifest","name": "Bundle-Name","value": "Apache Commons Text"},{"type": "product","confidence": "MEDIUM","source": "Manifest","name": "bundle-symbolicname","value": "org.apache.commons.text"},{"type": "product","confidence": "HIGH","source": "Manifest","name": "Implementation-Title","value": "Apache Commons Text"},{"type": "product","confidence": "LOW","source": "Manifest","name": "multi-release","value": "true"},{"type": "product","confidence": "LOW","source": "Manifest","name": "require-capability","value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""},{"type": "product","confidence": "MEDIUM","source": "Manifest","name": "specification-title","value": "Apache Commons Text"},{"type": "product","confidence": "HIGHEST","source": "pom","name": "artifactid","value": "commons-text"},{"type": "product","confidence": "HIGHEST","source": "pom","name": "groupid","value": "apache.commons"},{"type": "product","confidence": "HIGH","source": "pom","name": "name","value": "Apache Commons Text"},{"type": "product","confidence": "MEDIUM","source": "pom","name": "parent-artifactid","value": "commons-parent"},{"type": "product","confidence": "MEDIUM","source": "pom","name": "parent-groupid","value": "org.apache.commons"},{"type": "product","confidence": "MEDIUM","source": "pom","name": "url","value": "https:\/\/commons.apache.org\/proper\/commons-text"}],"versionEvidence": [{"type": "version","confidence": "HIGH","source": "file","name": "version","value": "1.11.0"},{"type": "version","confidence": "HIGHEST","source": "gradle","name": "version","value": "1.11.0"},{"type": "version","confidence": "HIGH","source": "Manifest","name": "Bundle-Version","value": "1.11.0"},{"type": "version","confidence": "HIGH","source": "Manifest","name": "Implementation-Version","value": "1.11.0"},{"type": "version","confidence": "LOW","source": "pom","name": "parent-version","value": "1.11.0"},{"type": "version","confidence": "HIGHEST","source": "pom","name": "version","value": "1.11.0"}]},"packages": [{"id": "pkg:maven\/org.apache.commons\/commons-text@1.11.0","confidence": "HIGH","url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/org.apache.commons\/commons-text@1.11.0?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"}],"vulnerabilityIds": [{"id": "cpe:2.3:a:apache:commons_net:1.11.0:*:*:*:*:*:*:*","confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Acommons_net&cpe_version=cpe%3A%2F%3Aapache%3Acommons_net%3A1.11.0"},{"id": "cpe:2.3:a:apache:commons_text:1.11.0:*:*:*:*:*:*:*","confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Acommons_text&cpe_version=cpe%3A%2F%3Aapache%3Acommons_text%3A1.11.0"}],"vulnerabilities": [ {"source": "NVD","name": "CVE-2021-37533","severity" : "MEDIUM","cvssv3": {"baseScore": 6.5 ,"attackVector": "NETWORK","attackComplexity": "LOW","privilegesRequired": "NONE","userInteraction": "REQUIRED","scope": "UNCHANGED","confidentialityImpact": "HIGH","integrityImpact": "NONE","availabilityImpact": "NONE","baseSeverity": "MEDIUM","exploitabilityScore": "2.8","impactScore": "3.6","version": "3.1"},"cwes": ["CWE-20"],"description": "Prior to Apache Commons Net 3.9.0, Net's FTP client trusts the host from PASV response by default. A malicious server can redirect the Commons Net code to use a different host, but the user has to connect to the malicious server in the first place. This may lead to leakage of information about services running on the private network of the client. The default in version 3.9.0 is now false to ignore such hosts, as cURL does. See https:\/\/issues.apache.org\/jira\/browse\/NET-711.","notes": "","references": [ {"source": "CONFIRM","url": "https:\/\/lists.apache.org\/thread\/o6yn9r9x6s94v97264hmgol1sf48mvx7","name": "N\/A"}, {"source": "MLIST","url": "https:\/\/lists.debian.org\/debian-lts-announce\/2022\/12\/msg00038.html","name": "[debian-lts-announce] 20221229 [SECURITY] [DLA 3251-1] libcommons-net-java security update"}, {"source": "DEBIAN","url": "https:\/\/www.debian.org\/security\/2022\/dsa-5307","name": "DSA-5307"}, {"source": "MLIST","url": "http:\/\/www.openwall.com\/lists\/oss-security\/2022\/12\/03\/1","name": "[oss-security] 20221203 CVE-2021-37533: Apache Commons Net's FTP client trusts the host from PASV response by default"}],"vulnerableSoftware": [ {"software": { "id":"cpe:2.3:a:apache:commons_net:*:*:*:*:*:*:*:*","vulnerabilityIdMatched":"true","versionEndExcluding":"3.9.0"}}]}]}]}
+{
+  "reportSchema": "1.1",
+  "scanInfo": {
+    "engineVersion": "6.2.2",
+    "dataSource": [
+      {
+        "name": "NVD CVE Checked",
+        "timestamp": "2024-07-20T16:16:14"
+      },
+      {
+        "name": "NVD CVE Modified",
+        "timestamp": "2024-07-20T15:30:01"
+      },
+      {
+        "name": "VersionCheckOn",
+        "timestamp": "2024-07-17T18:42:02"
+      }
+    ]
+  },
+  "projectInfo": {
+    "name": "root project 'makeLibrary'",
+    "groupID": "org.example",
+    "artifactID": "makeLibrary",
+    "version": "1.0",
+    "reportDate": "2024-07-20T16:41:03.223400600Z",
+    "credits": {
+      "NVD": "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+      "NPM": "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+      "RETIREJS": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+      "OSSINDEX": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
+    }
+  },
+  "dependencies": [
+    {
+      "isVirtual": false,
+      "fileName": "commons-exec-1.3.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-exec\\1.3\\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\\commons-exec-1.3.jar",
+      "md5": "8bb8fa2edfd60d5c7ed6bf9923d14aa8",
+      "sha1": "8dfb9facd0830a27b1b5f29f84593f0aeee7773b",
+      "sha256": "cb49812dc1bfb0ea4f20f398bcae1a88c6406e213e67f7524fb10d4f8ad9347b",
+      "description": "Apache Commons Exec is a library to reliably execute external processes from within the JVM.",
+      "license": "http:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "commons-exec"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "org.apache.commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "apache"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "exec"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "http:\/\/commons.apache.org\/proper\/commons-exec\/"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "org.apache.commons.exec"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "implementation-build",
+            "value": "trunk@r1636211; 2014-11-02 23:51:55+0000"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Vendor",
+            "value": "The Apache Software Foundation"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Implementation-Vendor-Id",
+            "value": "org.apache"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.5))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "specification-vendor",
+            "value": "The Apache Software Foundation"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "commons-exec"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "apache.commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Apache Commons Exec"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "commons-parent"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "org.apache.commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "url",
+            "value": "http:\/\/commons.apache.org\/proper\/commons-exec\/"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "commons-exec"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "commons-exec"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "apache"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "commons"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "exec"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "http:\/\/commons.apache.org\/proper\/commons-exec\/"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "Apache Commons Exec"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "org.apache.commons.exec"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "implementation-build",
+            "value": "trunk@r1636211; 2014-11-02 23:51:55+0000"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Title",
+            "value": "Apache Commons Exec"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.5))\""
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "specification-title",
+            "value": "Apache Commons Exec"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "commons-exec"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "apache.commons"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Apache Commons Exec"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "commons-parent"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "org.apache.commons"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "url",
+            "value": "http:\/\/commons.apache.org\/proper\/commons-exec\/"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "1.3"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "1.3"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Version",
+            "value": "1.3"
+          },
+          {
+            "type": "version",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-version",
+            "value": "1.3"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "1.3"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/org.apache.commons\/commons-exec@1.3",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/org.apache.commons\/commons-exec@1.3?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:apache:commons_net:1.3:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Acommons_net&cpe_version=cpe%3A%2F%3Aapache%3Acommons_net%3A1.3"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "source": "NVD",
+          "name": "CVE-2021-37533",
+          "severity": "MEDIUM",
+          "cvssv3": {
+            "baseScore": 6.5,
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "REQUIRED",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "NONE",
+            "baseSeverity": "MEDIUM",
+            "exploitabilityScore": "2.8",
+            "impactScore": "3.6",
+            "version": "3.1"
+          },
+          "cwes": [
+            "CWE-20"
+          ],
+          "description": "Prior to Apache Commons Net 3.9.0, Net's FTP client trusts the host from PASV response by default. A malicious server can redirect the Commons Net code to use a different host, but the user has to connect to the malicious server in the first place. This may lead to leakage of information about services running on the private network of the client. The default in version 3.9.0 is now false to ignore such hosts, as cURL does. See https:\/\/issues.apache.org\/jira\/browse\/NET-711.",
+          "notes": "",
+          "references": [
+            {
+              "source": "CONFIRM",
+              "url": "https:\/\/lists.apache.org\/thread\/o6yn9r9x6s94v97264hmgol1sf48mvx7",
+              "name": "N\/A"
+            },
+            {
+              "source": "MLIST",
+              "url": "https:\/\/lists.debian.org\/debian-lts-announce\/2022\/12\/msg00038.html",
+              "name": "[debian-lts-announce] 20221229 [SECURITY] [DLA 3251-1] libcommons-net-java security update"
+            },
+            {
+              "source": "DEBIAN",
+              "url": "https:\/\/www.debian.org\/security\/2022\/dsa-5307",
+              "name": "DSA-5307"
+            },
+            {
+              "source": "MLIST",
+              "url": "http:\/\/www.openwall.com\/lists\/oss-security\/2022\/12\/03\/1",
+              "name": "[oss-security] 20221203 CVE-2021-37533: Apache Commons Net's FTP client trusts the host from PASV response by default"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:apache:commons_net:*:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true",
+                "versionEndExcluding": "3.9.0"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "commons-lang3-3.14.0.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-lang3\\3.14.0\\1ed471194b02f2c6cb734a0cd6f6f107c673afae\\commons-lang3-3.14.0.jar",
+      "md5": "4e5c3f5e6b0b965ef241d7d72ac8971f",
+      "sha1": "1ed471194b02f2c6cb734a0cd6f6f107c673afae",
+      "sha256": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c",
+      "description": "\n  Apache Commons Lang, a package of Java utility classes for the\n  classes that are in java.lang's hierarchy, or are considered to be so\n  standard as to justify existence in java.lang.\n  ",
+      "license": "https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "commons-lang3"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "org.apache.commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "apache"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "lang3"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "automatic-module-name",
+            "value": "org.apache.commons.lang3"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "21"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/commons.apache.org\/proper\/commons-lang\/"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "org.apache.commons.lang3"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Vendor",
+            "value": "The Apache Software Foundation"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "multi-release",
+            "value": "true"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "specification-vendor",
+            "value": "The Apache Software Foundation"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "commons-lang3"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "apache.commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Apache Commons Lang"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "commons-parent"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "org.apache.commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "url",
+            "value": "https:\/\/commons.apache.org\/proper\/commons-lang\/"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "commons-lang3"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "commons-lang3"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "apache"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "commons"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "lang3"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "automatic-module-name",
+            "value": "org.apache.commons.lang3"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "21"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/commons.apache.org\/proper\/commons-lang\/"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "Apache Commons Lang"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "org.apache.commons.lang3"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Title",
+            "value": "Apache Commons Lang"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "multi-release",
+            "value": "true"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "specification-title",
+            "value": "Apache Commons Lang"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "commons-lang3"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "apache.commons"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Apache Commons Lang"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "commons-parent"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "org.apache.commons"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "url",
+            "value": "https:\/\/commons.apache.org\/proper\/commons-lang\/"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "3.14.0"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "3.14.0"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "3.14.0"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Version",
+            "value": "3.14.0"
+          },
+          {
+            "type": "version",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-version",
+            "value": "3.14.0"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "3.14.0"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/org.apache.commons\/commons-lang3@3.14.0",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/org.apache.commons\/commons-lang3@3.14.0?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:apache:commons_net:3.14.0:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Acommons_net&cpe_version=cpe%3A%2F%3Aapache%3Acommons_net%3A3.14.0"
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "commons-text-1.11.0.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-text\\1.11.0\\2bb044b7717ec2eccaf9ea7769c1509054b50e9a\\commons-text-1.11.0.jar",
+      "md5": "ebfec4f77cc595c518d655f7e68346be",
+      "sha1": "2bb044b7717ec2eccaf9ea7769c1509054b50e9a",
+      "sha256": "2acf30a070b19163d5a480eae411a281341e870020e3534c6d5d4c8472739e30",
+      "description": "Apache Commons Text is a library focused on algorithms working on strings.",
+      "license": "https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "commons-text"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "org.apache.commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "apache"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "text"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "automatic-module-name",
+            "value": "org.apache.commons.text"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "21"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/commons.apache.org\/proper\/commons-text"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "org.apache.commons.text"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Vendor",
+            "value": "The Apache Software Foundation"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "multi-release",
+            "value": "true"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "specification-vendor",
+            "value": "The Apache Software Foundation"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "commons-text"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "apache.commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Apache Commons Text"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "commons-parent"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "org.apache.commons"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "url",
+            "value": "https:\/\/commons.apache.org\/proper\/commons-text"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "commons-text"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "commons-text"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "apache"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "commons"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "text"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "automatic-module-name",
+            "value": "org.apache.commons.text"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "21"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/commons.apache.org\/proper\/commons-text"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "Apache Commons Text"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "org.apache.commons.text"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Title",
+            "value": "Apache Commons Text"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "multi-release",
+            "value": "true"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "specification-title",
+            "value": "Apache Commons Text"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "commons-text"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "apache.commons"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Apache Commons Text"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "commons-parent"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "org.apache.commons"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "url",
+            "value": "https:\/\/commons.apache.org\/proper\/commons-text"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "1.11.0"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "1.11.0"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "1.11.0"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Version",
+            "value": "1.11.0"
+          },
+          {
+            "type": "version",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-version",
+            "value": "1.11.0"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "1.11.0"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/org.apache.commons\/commons-text@1.11.0",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/org.apache.commons\/commons-text@1.11.0?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:apache:commons_net:1.11.0:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Acommons_net&cpe_version=cpe%3A%2F%3Aapache%3Acommons_net%3A1.11.0"
+        },
+        {
+          "id": "cpe:2.3:a:apache:commons_text:1.11.0:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aapache&cpe_product=cpe%3A%2F%3Aapache%3Acommons_text&cpe_version=cpe%3A%2F%3Aapache%3Acommons_text%3A1.11.0"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "source": "NVD",
+          "name": "CVE-2021-37533",
+          "severity": "MEDIUM",
+          "cvssv3": {
+            "baseScore": 6.5,
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "REQUIRED",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "NONE",
+            "baseSeverity": "MEDIUM",
+            "exploitabilityScore": "2.8",
+            "impactScore": "3.6",
+            "version": "3.1"
+          },
+          "cwes": [
+            "CWE-20"
+          ],
+          "description": "Prior to Apache Commons Net 3.9.0, Net's FTP client trusts the host from PASV response by default. A malicious server can redirect the Commons Net code to use a different host, but the user has to connect to the malicious server in the first place. This may lead to leakage of information about services running on the private network of the client. The default in version 3.9.0 is now false to ignore such hosts, as cURL does. See https:\/\/issues.apache.org\/jira\/browse\/NET-711.",
+          "notes": "",
+          "references": [
+            {
+              "source": "CONFIRM",
+              "url": "https:\/\/lists.apache.org\/thread\/o6yn9r9x6s94v97264hmgol1sf48mvx7",
+              "name": "N\/A"
+            },
+            {
+              "source": "MLIST",
+              "url": "https:\/\/lists.debian.org\/debian-lts-announce\/2022\/12\/msg00038.html",
+              "name": "[debian-lts-announce] 20221229 [SECURITY] [DLA 3251-1] libcommons-net-java security update"
+            },
+            {
+              "source": "DEBIAN",
+              "url": "https:\/\/www.debian.org\/security\/2022\/dsa-5307",
+              "name": "DSA-5307"
+            },
+            {
+              "source": "MLIST",
+              "url": "http:\/\/www.openwall.com\/lists\/oss-security\/2022\/12\/03\/1",
+              "name": "[oss-security] 20221203 CVE-2021-37533: Apache Commons Net's FTP client trusts the host from PASV response by default"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:apache:commons_net:*:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true",
+                "versionEndExcluding": "3.9.0"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "gson-2.8.8.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.gson\\gson\\2.8.8\\431fc3cbc0ff81abdbfde070062741089c3ba874\\gson-2.8.8.jar",
+      "md5": "b85312b5570f86aff19100869b6bdbc6",
+      "sha1": "431fc3cbc0ff81abdbfde070062741089c3ba874",
+      "sha256": "c6f3152b0c39c1b7ebe267e99604a750e9d5585b2f3f2e19d6fbd7ec9080d0fb",
+      "description": "Gson JSON library",
+      "license": "\"Apache 2.0\";link=\"https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt\"",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "gson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "com.google.code.gson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "google"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "gson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-contactaddress",
+            "value": "https:\/\/github.com\/google\/gson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/github.com\/google\/gson\/gson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-requiredexecutionenvironment",
+            "value": "JavaSE-1.6, JavaSE-1.7, JavaSE-1.8"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "com.google.gson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "gson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "google.code.gson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Gson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "gson-parent"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "com.google.code.gson"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "gson"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "gson"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "google"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "gson"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-contactaddress",
+            "value": "https:\/\/github.com\/google\/gson"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/github.com\/google\/gson\/gson"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "Gson"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-requiredexecutionenvironment",
+            "value": "JavaSE-1.6, JavaSE-1.7, JavaSE-1.8"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "com.google.gson"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "gson"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "google.code.gson"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Gson"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "gson-parent"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "com.google.code.gson"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "2.8.8"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "2.8.8"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "2.8.8"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "2.8.8"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/com.google.code.gson\/gson@2.8.8",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/com.google.code.gson\/gson@2.8.8?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:google:gson:2.8.8:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Agoogle&cpe_product=cpe%3A%2F%3Agoogle%3Agson&cpe_version=cpe%3A%2F%3Agoogle%3Agson%3A2.8.8"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "source": "NVD",
+          "name": "CVE-2022-25647",
+          "severity": "HIGH",
+          "cvssv2": {
+            "score": 5.0,
+            "accessVector": "NETWORK",
+            "accessComplexity": "LOW",
+            "authenticationr": "NONE",
+            "confidentialImpact": "NONE",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "PARTIAL",
+            "severity": "MEDIUM",
+            "version": "2.0",
+            "exploitabilityScore": "10.0",
+            "impactScore": "2.9"
+          },
+          "cvssv3": {
+            "baseScore": 7.5,
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "NONE",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "HIGH",
+            "baseSeverity": "HIGH",
+            "exploitabilityScore": "3.9",
+            "impactScore": "3.6",
+            "version": "3.1"
+          },
+          "cwes": [
+            "CWE-502"
+          ],
+          "description": "The package com.google.code.gson:gson before 2.8.9 are vulnerable to Deserialization of Untrusted Data via the writeReplace() method in internal classes, which may lead to DoS attacks.",
+          "notes": "",
+          "references": [
+            {
+              "source": "MISC",
+              "url": "https:\/\/snyk.io\/vuln\/SNYK-JAVA-COMGOOGLECODEGSON-1730327",
+              "name": "https:\/\/snyk.io\/vuln\/SNYK-JAVA-COMGOOGLECODEGSON-1730327"
+            },
+            {
+              "source": "N\/A",
+              "url": "https:\/\/www.oracle.com\/security-alerts\/cpujul2022.html",
+              "name": "N\/A"
+            },
+            {
+              "source": "MLIST",
+              "url": "https:\/\/lists.debian.org\/debian-lts-announce\/2022\/09\/msg00009.html",
+              "name": "[debian-lts-announce] 20220907 [SECURITY] [DLA 3100-1] libgoogle-gson-java security update"
+            },
+            {
+              "source": "DEBIAN",
+              "url": "https:\/\/www.debian.org\/security\/2022\/dsa-5227",
+              "name": "DSA-5227"
+            },
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/google\/gson\/pull\/1991\/commits",
+              "name": "https:\/\/github.com\/google\/gson\/pull\/1991\/commits"
+            },
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/google\/gson\/pull\/1991",
+              "name": "https:\/\/github.com\/google\/gson\/pull\/1991"
+            },
+            {
+              "source": "MLIST",
+              "url": "https:\/\/lists.debian.org\/debian-lts-announce\/2022\/05\/msg00015.html",
+              "name": "[debian-lts-announce] 20220513 [SECURITY] [DLA 3001-1] libgoogle-gson-java security update"
+            },
+            {
+              "source": "OSSINDEX",
+              "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2022-25647?component-type=maven&component-name=com.google.code.gson%2Fgson&utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2",
+              "name": "[CVE-2022-25647] CWE-502: Deserialization of Untrusted Data"
+            },
+            {
+              "source": "CONFIRM",
+              "url": "https:\/\/security.netapp.com\/advisory\/ntap-20220901-0009\/",
+              "name": "https:\/\/security.netapp.com\/advisory\/ntap-20220901-0009\/"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:google:gson:*:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true",
+                "versionStartIncluding": "2.2.3",
+                "versionEndExcluding": "2.8.9"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:linux:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:vmware_vsphere:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:windows:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:oracle:financial_services_crime_and_compliance_management_studio:8.0.8.2.0:*:*:*:*:*:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:oracle:financial_services_crime_and_compliance_management_studio:8.0.8.3.0:*:*:*:*:*:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:oracle:graalvm:20.3.6:*:*:*:enterprise:*:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:oracle:graalvm:21.3.2:*:*:*:enterprise:*:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:oracle:graalvm:22.1.0:*:*:*:enterprise:*:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:oracle:retail_order_broker:18.0:*:*:*:*:*:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:oracle:retail_order_broker:19.1:*:*:*:*:*:*:*"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "jackson-annotations-2.16.1.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-annotations\\2.16.1\\fd441d574a71e7d10a4f73de6609f881d8cdfeec\\jackson-annotations-2.16.1.jar",
+      "md5": "1c1e081b6b61ee1f1cb0ef52eef45d61",
+      "sha1": "fd441d574a71e7d10a4f73de6609f881d8cdfeec",
+      "sha256": "a4730771e6a495dd3793a42cdb8ce6bddb96c77e15f40c98fd8d9a7ae09e7286",
+      "description": "Core annotations used for value types, used by Jackson data binding package.\n  ",
+      "license": "The Apache Software License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "jackson-annotations"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "com.fasterxml.jackson.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "fasterxml"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "jackson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "1.8"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/github.com\/FasterXML\/jackson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "com.fasterxml.jackson.core.jackson-annotations"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Vendor",
+            "value": "FasterXML"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Implementation-Vendor-Id",
+            "value": "com.fasterxml.jackson.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "specification-vendor",
+            "value": "FasterXML"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "jackson-annotations"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "fasterxml.jackson.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Jackson-annotations"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "jackson-parent"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "com.fasterxml.jackson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "url",
+            "value": "FasterXML\/jackson"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "jackson-annotations"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "jackson-annotations"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "hint analyzer",
+            "name": "product",
+            "value": "java8"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "hint analyzer",
+            "name": "product",
+            "value": "modules"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "fasterxml"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "jackson"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "1.8"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/github.com\/FasterXML\/jackson"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "Jackson-annotations"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "com.fasterxml.jackson.core.jackson-annotations"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Title",
+            "value": "Jackson-annotations"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "specification-title",
+            "value": "Jackson-annotations"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "jackson-annotations"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "fasterxml.jackson.core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Jackson-annotations"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "jackson-parent"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "com.fasterxml.jackson"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "url",
+            "value": "FasterXML\/jackson"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "2.16.1"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/com.fasterxml.jackson.core\/jackson-annotations@2.16.1",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/com.fasterxml.jackson.core\/jackson-annotations@2.16.1?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:fasterxml:jackson-modules-java8:2.16.1:*:*:*:*:*:*:*",
+          "confidence": "LOW"
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "jackson-core-2.16.1.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-core\\2.16.1\\9456bb3cdd0f79f91a5f730a1b1bb041a380c91f\\jackson-core-2.16.1.jar",
+      "md5": "0f51c6a7d713aed6e044cf1692bb59f4",
+      "sha1": "9456bb3cdd0f79f91a5f730a1b1bb041a380c91f",
+      "sha256": "f5f8ef90609e64fec82eb908e497dc7d81b2eb983fe509b870292a193cde4dfb",
+      "description": "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "license": "The Apache Software License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "jackson-core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "com.fasterxml.jackson.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "base"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "com"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "fasterxml"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "jackson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "json"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "1.8"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/github.com\/FasterXML\/jackson-core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "com.fasterxml.jackson.core.jackson-core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Vendor",
+            "value": "FasterXML"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Implementation-Vendor-Id",
+            "value": "com.fasterxml.jackson.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "multi-release",
+            "value": "true"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "specification-vendor",
+            "value": "FasterXML"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "jackson-core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "fasterxml.jackson.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Jackson-core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "jackson-base"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "com.fasterxml.jackson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "url",
+            "value": "FasterXML\/jackson-core"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "jackson-core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "jackson-core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "hint analyzer",
+            "name": "product",
+            "value": "java8"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "hint analyzer",
+            "name": "product",
+            "value": "modules"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "base"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "com"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "fasterxml"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "filter"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "jackson"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "json"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "version"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "1.8"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/github.com\/FasterXML\/jackson-core"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "Jackson-core"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "com.fasterxml.jackson.core.jackson-core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Title",
+            "value": "Jackson-core"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "multi-release",
+            "value": "true"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "specification-title",
+            "value": "Jackson-core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "jackson-core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "fasterxml.jackson.core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Jackson-core"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "jackson-base"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "com.fasterxml.jackson"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "url",
+            "value": "FasterXML\/jackson-core"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "2.16.1"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/com.fasterxml.jackson.core\/jackson-core@2.16.1",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/com.fasterxml.jackson.core\/jackson-core@2.16.1?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:fasterxml:jackson-modules-java8:2.16.1:*:*:*:*:*:*:*",
+          "confidence": "LOW"
+        },
+        {
+          "id": "cpe:2.3:a:json-java_project:json-java:2.16.1:*:*:*:*:*:*:*",
+          "confidence": "LOW"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "source": "NVD",
+          "name": "CVE-2022-45688",
+          "severity": "HIGH",
+          "cvssv3": {
+            "baseScore": 7.5,
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "NONE",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "HIGH",
+            "baseSeverity": "HIGH",
+            "exploitabilityScore": "3.9",
+            "impactScore": "3.6",
+            "version": "3.1"
+          },
+          "cwes": [
+            "CWE-787"
+          ],
+          "description": "A stack overflow in the XML.toJSONObject component of hutool-json v5.8.10 allows attackers to cause a Denial of Service (DoS) via crafted JSON or XML data.",
+          "notes": "",
+          "references": [
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/stleary\/JSON-java\/issues\/708",
+              "name": "https:\/\/github.com\/stleary\/JSON-java\/issues\/708"
+            },
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/dromara\/hutool\/issues\/2748",
+              "name": "https:\/\/github.com\/dromara\/hutool\/issues\/2748"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:hutool:hutool:5.8.10:*:*:*:*:*:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:json-java_project:json-java:*:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true",
+                "versionEndExcluding": "20230227"
+              }
+            }
+          ]
+        },
+        {
+          "source": "NVD",
+          "name": "CVE-2023-5072",
+          "severity": "HIGH",
+          "cvssv3": {
+            "baseScore": 7.5,
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "NONE",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "HIGH",
+            "baseSeverity": "HIGH",
+            "exploitabilityScore": "3.9",
+            "impactScore": "3.6",
+            "version": "3.1"
+          },
+          "cwes": [
+            "CWE-770"
+          ],
+          "description": "Denial of Service  in JSON-Java versions up to and including 20230618. \u00A0A bug in the parser means that an input string of modest size can lead to indefinite amounts of memory being used.",
+          "notes": "",
+          "references": [
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/stleary\/JSON-java\/issues\/758",
+              "name": "https:\/\/github.com\/stleary\/JSON-java\/issues\/758"
+            },
+            {
+              "source": "",
+              "url": "http:\/\/www.openwall.com\/lists\/oss-security\/2023\/12\/13\/4",
+              "name": "http:\/\/www.openwall.com\/lists\/oss-security\/2023\/12\/13\/4"
+            },
+            {
+              "source": "",
+              "url": "https:\/\/security.netapp.com\/advisory\/ntap-20240621-0007\/",
+              "name": "https:\/\/security.netapp.com\/advisory\/ntap-20240621-0007\/"
+            },
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/stleary\/JSON-java\/issues\/771",
+              "name": "https:\/\/github.com\/stleary\/JSON-java\/issues\/771"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:json-java_project:json-java:*:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true",
+                "versionEndIncluding": "20230618"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "jackson-databind-2.16.1.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-databind\\2.16.1\\2a16efeb840c45af1e2f31753dfe76795278b73\\jackson-databind-2.16.1.jar",
+      "md5": "ac71b868569d329136f2c63f34dd2c89",
+      "sha1": "02a16efeb840c45af1e2f31753dfe76795278b73",
+      "sha256": "baf8a8ebee8f45ef68cdd5e2dd3923b3e296c0937b96ec0b4806aa3a31bccd1d",
+      "description": "General data-binding functionality for Jackson: works on core streaming API",
+      "license": "The Apache Software License, Version 2.0: https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "com.fasterxml.jackson.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "databind"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "fasterxml"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "jackson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "1.8"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/github.com\/FasterXML\/jackson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "com.fasterxml.jackson.core.jackson-databind"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Vendor",
+            "value": "FasterXML"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Implementation-Vendor-Id",
+            "value": "com.fasterxml.jackson.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "multi-release",
+            "value": "true"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "specification-vendor",
+            "value": "FasterXML"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "fasterxml.jackson.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "jackson-base"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "com.fasterxml.jackson"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "url",
+            "value": "FasterXML\/jackson"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "hint analyzer",
+            "name": "product",
+            "value": "java8"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "hint analyzer",
+            "name": "product",
+            "value": "modules"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "databind"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "fasterxml"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "jackson"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "build-jdk-spec",
+            "value": "1.8"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "https:\/\/github.com\/FasterXML\/jackson"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "com.fasterxml.jackson.core.jackson-databind"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Title",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "multi-release",
+            "value": "true"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\""
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "specification-title",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "fasterxml.jackson.core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "jackson-databind"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "jackson-base"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "com.fasterxml.jackson"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "url",
+            "value": "FasterXML\/jackson"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Version",
+            "value": "2.16.1"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "2.16.1"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/com.fasterxml.jackson.core\/jackson-databind@2.16.1",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/com.fasterxml.jackson.core\/jackson-databind@2.16.1?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:fasterxml:jackson-databind:2.16.1:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Afasterxml&cpe_product=cpe%3A%2F%3Afasterxml%3Ajackson-databind&cpe_version=cpe%3A%2F%3Afasterxml%3Ajackson-databind%3A2.16.1"
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "json-20171018.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\org.json\\json\\20171018\\36ced462c97f0845b4a7b266a25cebe95d18baa3\\json-20171018.jar",
+      "md5": "2a608337af5f5d4cd409f5f580a47f10",
+      "sha1": "36ced462c97f0845b4a7b266a25cebe95d18baa3",
+      "sha256": "01a9dc4b153cded6cc295ce7ed75d74d03bf3670fee1565ad2d83b2eba79dc1e",
+      "description": "\n\t\tJSON is a light-weight, language independent, data interchange format.\n\t\tSee http:\/\/www.JSON.org\/\n\n\t\tThe files in this package implement JSON encoders\/decoders in Java.\n\t\tIt also includes the capability to convert between JSON and XML, HTTP\n\t\theaders, Cookies, and CDL.\n\n\t\tThis is a reference implementation. There is a large number of JSON packages\n\t\tin Java. Perhaps someday the Java community will standardize on one. Until\n\t\tthen, choose carefully.\n\n\t\tThe license includes this restriction: \"The software shall be used for good,\n\t\tnot evil.\" If your conscience cannot live with that, then choose a different\n\t\tpackage.\n\t",
+      "license": "The JSON License: http:\/\/json.org\/license.html",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "json-20171018"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "org.json"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "cdl"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "http"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "json"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "xml"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "json"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "json"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "json"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "JSON in Java"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "url",
+            "value": "douglascrockford\/JSON-java"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "json-20171018"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "json"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "cdl"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "http"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "json"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "xml"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "JSON in Java"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "json"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "json"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "json"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "JSON in Java"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "url",
+            "value": "douglascrockford\/JSON-java"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "MEDIUM",
+            "source": "file",
+            "name": "version",
+            "value": "20171018"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "20171018"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "20171018"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/org.json\/json@20171018",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/org.json\/json@20171018?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:json-java_project:json-java:*:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Ajson-java_project&cpe_product=cpe%3A%2F%3Ajson-java_project%3Ajson-java"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "source": "NVD",
+          "name": "CVE-2022-45688",
+          "severity": "HIGH",
+          "cvssv3": {
+            "baseScore": 7.5,
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "NONE",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "HIGH",
+            "baseSeverity": "HIGH",
+            "exploitabilityScore": "3.9",
+            "impactScore": "3.6",
+            "version": "3.1"
+          },
+          "cwes": [
+            "CWE-787"
+          ],
+          "description": "A stack overflow in the XML.toJSONObject component of hutool-json v5.8.10 allows attackers to cause a Denial of Service (DoS) via crafted JSON or XML data.",
+          "notes": "",
+          "references": [
+            {
+              "source": "OSSINDEX",
+              "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2022-45688?component-type=maven&component-name=org.json%2Fjson&utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2",
+              "name": "[CVE-2022-45688] CWE-787: Out-of-bounds Write"
+            },
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/stleary\/JSON-java\/issues\/708",
+              "name": "https:\/\/github.com\/stleary\/JSON-java\/issues\/708"
+            },
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/dromara\/hutool\/issues\/2748",
+              "name": "https:\/\/github.com\/dromara\/hutool\/issues\/2748"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:hutool:hutool:5.8.10:*:*:*:*:*:*:*"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:json-java_project:json-java:*:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true",
+                "versionEndExcluding": "20230227"
+              }
+            }
+          ]
+        },
+        {
+          "source": "NVD",
+          "name": "CVE-2023-5072",
+          "severity": "HIGH",
+          "cvssv3": {
+            "baseScore": 7.5,
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "NONE",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "HIGH",
+            "baseSeverity": "HIGH",
+            "exploitabilityScore": "3.9",
+            "impactScore": "3.6",
+            "version": "3.1"
+          },
+          "cwes": [
+            "CWE-770"
+          ],
+          "description": "Denial of Service  in JSON-Java versions up to and including 20230618. \u00A0A bug in the parser means that an input string of modest size can lead to indefinite amounts of memory being used.",
+          "notes": "",
+          "references": [
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/stleary\/JSON-java\/issues\/758",
+              "name": "https:\/\/github.com\/stleary\/JSON-java\/issues\/758"
+            },
+            {
+              "source": "OSSINDEX",
+              "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2023-5072?component-type=maven&component-name=org.json%2Fjson&utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2",
+              "name": "[CVE-2023-5072] CWE-770: Allocation of Resources Without Limits or Throttling"
+            },
+            {
+              "source": "",
+              "url": "http:\/\/www.openwall.com\/lists\/oss-security\/2023\/12\/13\/4",
+              "name": "http:\/\/www.openwall.com\/lists\/oss-security\/2023\/12\/13\/4"
+            },
+            {
+              "source": "",
+              "url": "https:\/\/security.netapp.com\/advisory\/ntap-20240621-0007\/",
+              "name": "https:\/\/security.netapp.com\/advisory\/ntap-20240621-0007\/"
+            },
+            {
+              "source": "MISC",
+              "url": "https:\/\/github.com\/stleary\/JSON-java\/issues\/771",
+              "name": "https:\/\/github.com\/stleary\/JSON-java\/issues\/771"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:json-java_project:json-java:*:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true",
+                "versionEndIncluding": "20230618"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "logback-classic-1.2.10.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-classic\\1.2.10\\f69d97ef3335c6ab82fc21dfb77ac613f90c1221\\logback-classic-1.2.10.jar",
+      "md5": "98021917df75e0a36d0398f7352e5e4f",
+      "sha1": "f69d97ef3335c6ab82fc21dfb77ac613f90c1221",
+      "sha256": "3160ae988af82c8bf3024ddbe034a82da98bb186fd09e76c50543c5b9da5cc5e",
+      "description": "logback-classic module",
+      "license": "http:\/\/www.eclipse.org\/legal\/epl-v10.html, http:\/\/www.gnu.org\/licenses\/old-licenses\/lgpl-2.1.html",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "logback-classic"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "ch.qos.logback"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "ch"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "classic"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "logback"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "qos"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "http:\/\/www.qos.ch"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-requiredexecutionenvironment",
+            "value": "JavaSE-1.6"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "ch.qos.logback.classic"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "originally-created-by",
+            "value": "Apache Maven Bundle Plugin"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "logback-classic"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "ch.qos.logback"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Logback Classic Module"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "logback-parent"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "logback-classic"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "logback-classic"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "ch"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "classic"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "logback"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "qos"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "http:\/\/www.qos.ch"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "Logback Classic Module"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-requiredexecutionenvironment",
+            "value": "JavaSE-1.6"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "ch.qos.logback.classic"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "originally-created-by",
+            "value": "Apache Maven Bundle Plugin"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "logback-classic"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "ch.qos.logback"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Logback Classic Module"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "logback-parent"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "1.2.10"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "1.2.10"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "1.2.10"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "1.2.10"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/ch.qos.logback\/logback-classic@1.2.10",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/ch.qos.logback\/logback-classic@1.2.10?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:qos:logback:1.2.10:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aqos&cpe_product=cpe%3A%2F%3Aqos%3Alogback&cpe_version=cpe%3A%2F%3Aqos%3Alogback%3A1.2.10"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "source": "NVD",
+          "name": "CVE-2023-6378",
+          "severity": "HIGH",
+          "cvssv3": {
+            "baseScore": 7.5,
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "NONE",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "HIGH",
+            "baseSeverity": "HIGH",
+            "exploitabilityScore": "3.9",
+            "impactScore": "3.6",
+            "version": "3.1"
+          },
+          "cwes": [
+            "CWE-502"
+          ],
+          "description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+          "notes": "",
+          "references": [
+            {
+              "source": "OSSINDEX",
+              "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2023-6378?component-type=maven&component-name=ch.qos.logback%2Flogback-classic&utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2",
+              "name": "[CVE-2023-6378] CWE-502: Deserialization of Untrusted Data"
+            },
+            {
+              "source": "",
+              "url": "https:\/\/logback.qos.ch\/news.html#1.3.12",
+              "name": "https:\/\/logback.qos.ch\/news.html#1.3.12"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:qos:logback:*:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true",
+                "versionStartIncluding": "1.2.0",
+                "versionEndExcluding": "1.2.13"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:qos:logback:*:*:*:*:*:*:*:*",
+                "versionStartIncluding": "1.3.0",
+                "versionEndExcluding": "1.3.12"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:qos:logback:*:*:*:*:*:*:*:*",
+                "versionStartIncluding": "1.4.0",
+                "versionEndExcluding": "1.4.12"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "logback-core-1.2.10.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-core\\1.2.10\\5328406bfcae7bcdcc86810fcb2920d2c297170d\\logback-core-1.2.10.jar",
+      "md5": "697b37f140ce9ac35a4ca3eaf4059f1a",
+      "sha1": "5328406bfcae7bcdcc86810fcb2920d2c297170d",
+      "sha256": "ba51a3fe56691f9dd7fe742e4a73c3ab4aaaa32202c73409ba56f18687399a08",
+      "description": "logback-core module",
+      "license": "http:\/\/www.eclipse.org\/legal\/epl-v10.html, http:\/\/www.gnu.org\/licenses\/old-licenses\/lgpl-2.1.html",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "logback-core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "ch.qos.logback"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "ch"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "logback"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "qos"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "http:\/\/www.qos.ch"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-requiredexecutionenvironment",
+            "value": "JavaSE-1.6"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "ch.qos.logback.core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "originally-created-by",
+            "value": "Apache Maven Bundle Plugin"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "logback-core"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "ch.qos.logback"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Logback Core Module"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "logback-parent"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "logback-core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "logback-core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "ch"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "logback"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "qos"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-docurl",
+            "value": "http:\/\/www.qos.ch"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "Logback Core Module"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-requiredexecutionenvironment",
+            "value": "JavaSE-1.6"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "ch.qos.logback.core"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "originally-created-by",
+            "value": "Apache Maven Bundle Plugin"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "require-capability",
+            "value": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\""
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "logback-core"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "ch.qos.logback"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "Logback Core Module"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "logback-parent"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "1.2.10"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "1.2.10"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "1.2.10"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "1.2.10"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/ch.qos.logback\/logback-core@1.2.10",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/ch.qos.logback\/logback-core@1.2.10?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:qos:logback:1.2.10:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https:\/\/nvd.nist.gov\/vuln\/search\/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Aqos&cpe_product=cpe%3A%2F%3Aqos%3Alogback&cpe_version=cpe%3A%2F%3Aqos%3Alogback%3A1.2.10"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "source": "NVD",
+          "name": "CVE-2023-6378",
+          "severity": "HIGH",
+          "cvssv3": {
+            "baseScore": 7.5,
+            "attackVector": "NETWORK",
+            "attackComplexity": "LOW",
+            "privilegesRequired": "NONE",
+            "userInteraction": "NONE",
+            "scope": "UNCHANGED",
+            "confidentialityImpact": "NONE",
+            "integrityImpact": "NONE",
+            "availabilityImpact": "HIGH",
+            "baseSeverity": "HIGH",
+            "exploitabilityScore": "3.9",
+            "impactScore": "3.6",
+            "version": "3.1"
+          },
+          "cwes": [
+            "CWE-502"
+          ],
+          "description": "A serialization vulnerability in logback receiver component part of \nlogback version 1.4.11 allows an attacker to mount a Denial-Of-Service \nattack by sending poisoned data.\n\n",
+          "notes": "",
+          "references": [
+            {
+              "source": "OSSINDEX",
+              "url": "https:\/\/ossindex.sonatype.org\/vulnerability\/CVE-2023-6378?component-type=maven&component-name=ch.qos.logback%2Flogback-core&utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2",
+              "name": "[CVE-2023-6378] CWE-502: Deserialization of Untrusted Data"
+            },
+            {
+              "source": "",
+              "url": "https:\/\/logback.qos.ch\/news.html#1.3.12",
+              "name": "https:\/\/logback.qos.ch\/news.html#1.3.12"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:qos:logback:*:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true",
+                "versionStartIncluding": "1.2.0",
+                "versionEndExcluding": "1.2.13"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:qos:logback:*:*:*:*:*:*:*:*",
+                "versionStartIncluding": "1.3.0",
+                "versionEndExcluding": "1.3.12"
+              }
+            },
+            {
+              "software": {
+                "id": "cpe:2.3:a:qos:logback:*:*:*:*:*:*:*:*",
+                "versionStartIncluding": "1.4.0",
+                "versionEndExcluding": "1.4.12"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "slf4j-api-1.7.32.jar",
+      "filePath": "C:\\Users\\SHABAN\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\1.7.32\\cdcff33940d9f2de763bc41ea05a0be5941176c3\\slf4j-api-1.7.32.jar",
+      "md5": "fbcf58513bc25b80f075d812aad3e3cf",
+      "sha1": "cdcff33940d9f2de763bc41ea05a0be5941176c3",
+      "sha256": "3624f8474c1af46d75f98bc097d7864a323c81b3808aa43689a6e1c601c027be",
+      "description": "The slf4j API",
+      "projectReferences": [
+        "makeLibrary:runtimeClasspath",
+        "makeLibrary:compileClasspath"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "slf4j-api"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "groupid",
+            "value": "org.slf4j"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "slf4j"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "automatic-module-name",
+            "value": "org.slf4j"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-requiredexecutionenvironment",
+            "value": "J2SE-1.5"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "slf4j.api"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "slf4j-api"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "slf4j"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "SLF4J API Module"
+          },
+          {
+            "type": "vendor",
+            "confidence": "LOW",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "slf4j-parent"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "org.slf4j"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "url",
+            "value": "http:\/\/www.slf4j.org"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "slf4j-api"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "artifactid",
+            "value": "slf4j-api"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "slf4j"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "automatic-module-name",
+            "value": "org.slf4j"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "Bundle-Name",
+            "value": "slf4j-api"
+          },
+          {
+            "type": "product",
+            "confidence": "LOW",
+            "source": "Manifest",
+            "name": "bundle-requiredexecutionenvironment",
+            "value": "J2SE-1.5"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "Manifest",
+            "name": "bundle-symbolicname",
+            "value": "slf4j.api"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Title",
+            "value": "slf4j-api"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "artifactid",
+            "value": "slf4j-api"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "groupid",
+            "value": "slf4j"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "SLF4J API Module"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-artifactid",
+            "value": "slf4j-parent"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "parent-groupid",
+            "value": "org.slf4j"
+          },
+          {
+            "type": "product",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "url",
+            "value": "http:\/\/www.slf4j.org"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "1.7.32"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "gradle",
+            "name": "version",
+            "value": "1.7.32"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "1.7.32"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Implementation-Version",
+            "value": "1.7.32"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "1.7.32"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven\/org.slf4j\/slf4j-api@1.7.32",
+          "confidence": "HIGH",
+          "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:maven\/org.slf4j\/slf4j-api@1.7.32?utm_source=dependency-check&utm_medium=integration&utm_content=6.2.2"
+        }
+      ]
+    }
+  ]
+}

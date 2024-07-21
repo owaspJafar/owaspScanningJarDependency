@@ -34,7 +34,6 @@ repositories {
 }
 dependencyCheck {
     failBuildOnCVSS = 7.0
-    //suppressionFile = file('dependency-check-suppression.xml')
     formats = ['HTML', 'XML','json']
     outputDirectory = file('build/jafar-report')
 
@@ -47,9 +46,18 @@ dependencies {
     implementation files('libs/makeLibrary.jar')
     add("implementation", "com.fasterxml.jackson:jackson-bom:2.16.1")
 
-    // org.owasp.dependencycheck needs these versions. Other plugins pull in older versions..
     add("implementation", "org.apache.commons:commons-lang3:3.14.0")
     add("implementation", "org.apache.commons:commons-text:1.11.0")
+    implementation 'org.apache.commons:commons-exec:1.3'
+
+    implementation 'org.json:json:20171018'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+    implementation 'ch.qos.logback:logback-classic:1.2.10'
+
+
 }
 
 test {

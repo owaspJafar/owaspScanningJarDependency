@@ -1,36 +1,43 @@
 package org.example;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  * This is a sample class for the Library.
  */
 public class LibraryJafar {
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(Main.class);
 
 
     public static void main(String[] args) {
 
-        dependencyCheckAnalyze();
+        // dependencyCheckAnalyze();
     }
 
 
-
-
-
-
-    /**Enter the name of the Library dependency and let it scan*/
-    public static void scanLibrary(){
+    /**
+     * Enter the name of the Library dependency and let it scan
+     */
+    public static void scanLibrary() {
         //Coming Soon
         /**/
     }
 
-    /**Displaying reports in Logcat*/
-    public static void showReportLogCat(){
+    /**
+     * Displaying reports in Logcat
+     */
+    public static void showReportLogCat() {
 
-        String filename =  "build/reports/dependency-check-report.html";
+        String filename = "build/reports/dependency-check-report.html";
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -41,7 +48,86 @@ public class LibraryJafar {
         }
     }
 
-    /**This runShellCommand method is used to execute terminal commands such as: git init*/
+    /**Analyzing the Jason file and separating vulnerable and invulnerable libraries*/
+    public static void reportJsonParserJafar( ){
+        if (readFile()!=null) {
+            JSONObject jsonObject = new JSONObject(Objects.requireNonNull(readFile()));
+
+            JSONArray dependencies = jsonObject.getJSONArray("dependencies");
+
+            logger.info("OWASP scanning jafar: List of books that are vulnerable");
+
+            ArrayList<String> listNot = new ArrayList<>();
+
+            for (int i = 0; i < dependencies.length(); i++) {
+                JSONObject dependenciesJsonObject = dependencies.getJSONObject(i);
+                try {
+
+                    if (dependenciesJsonObject.has("vulnerabilities") && dependenciesJsonObject.get("vulnerabilities") instanceof JSONArray) {
+                        JSONArray vulnerabilities = dependenciesJsonObject.getJSONArray("vulnerabilities");
+
+                        String severity = vulnerabilities.getJSONObject(0).getString("severity");
+                        String fileName = dependenciesJsonObject.getString("fileName");
+
+                        logger.info("OWASP scanning jafar:\t" + fileName + "\t-------------------->      Highest Severity = " + severity);
+
+                    } else {
+                        String fileName = dependenciesJsonObject.getString("fileName");
+                        listNot.add("OWASP scanning jafar:\t" + fileName);
+                    }
+
+
+                } catch (Exception e) {
+                    System.out.println(" " + e.getMessage());
+                    e.fillInStackTrace();
+                }
+            }
+
+            logger.info("\n\n\n");
+            logger.info("OWASP scanning jafar: List of books that are not vulnerable");
+            for (String s : listNot) {
+                logger.info(s);
+            }
+        }
+    }
+    /**Reading the report.json file*/
+    private static String readFile( ) {
+        String filePath="build/jafar-report/dependency-check-report.json";
+        StringBuilder content = new StringBuilder();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                content.append(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return content.toString();
+    }
+
+    public static void showReportJsonLogCat() {
+
+        String filename = "build/jafar-report/dependency-check-report.json";
+        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+            String line;
+            StringBuilder result = new StringBuilder();
+            while ((line = br.readLine()) != null) {
+                result.append(line);
+                //  System.out.println(line);
+            }
+
+            JSONObject jsonObject = new JSONObject(result);
+
+            System.out.println(jsonObject);
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+        }
+    }
+
+    /**
+     * This runShellCommand method is used to execute terminal commands such as: git init
+     */
     public static void runShellCommand(String command) {
         Process process;
         try {
@@ -67,9 +153,11 @@ public class LibraryJafar {
         }
     }
 
-    /**This runShellCommandGradlew method takes a string from the user,
-     *  which can be anything.
-     *  Like : ./gradlew dependencyCheckAnalyze*/
+    /**
+     * This runShellCommandGradlew method takes a string from the user,
+     * which can be anything.
+     * Like : ./gradlew dependencyCheckAnalyze
+     */
     public static void runShellCommandGradlew(String command) {
         String os = System.getProperty("os.name").toLowerCase();
         ProcessBuilder processBuilder = new ProcessBuilder();
@@ -98,40 +186,53 @@ public class LibraryJafar {
             e.printStackTrace();
         }
     }
-    /**Generates various reports that include details of detected vulnerabilities,
-     *  the extent of the risk, and suggested solutions to fix them.*/
-    public static void dependencyCheckAnalyze(){
+
+    /**
+     * Generates various reports that include details of detected vulnerabilities,
+     * the extent of the risk, and suggested solutions to fix them.
+     */
+    public static void dependencyCheckAnalyze() {
         runShellCommandGradlew("./gradlew dependencyCheckAnalyze");
     }
 
-    /**Updating the database is necessary to identify new vulnerabilities and
-     * improve the accuracy of the analysis.*/
-    public static void dependencyCheckUpdate(){
+    /**
+     * Updating the database is necessary to identify new vulnerabilities and
+     * improve the accuracy of the analysis.
+     */
+    public static void dependencyCheckUpdate() {
         runShellCommandGradlew("./gradlew dependencyCheckUpdate");
     }
 
-    /**This command clears the local database of vulnerabilities.
-     *  This is useful when you want to update the local database from scratch.*/
-    public static void dependencyCheckPurge(){
+    /**
+     * This command clears the local database of vulnerabilities.
+     * This is useful when you want to update the local database from scratch.
+     */
+    public static void dependencyCheckPurge() {
         runShellCommandGradlew("./gradlew dependencyCheckPurge");
     }
 
-    /**This command creates a consolidated report of several projects in a multi-project.
-     *  For projects that contain multiple modules, this command provides an overall report.*/
-    public static void dependencyCheckAggregate(){
+    /**
+     * This command creates a consolidated report of several projects in a multi-project.
+     * For projects that contain multiple modules, this command provides an overall report.
+     */
+    public static void dependencyCheckAggregate() {
         runShellCommandGradlew("./gradlew dependencyCheckAggregate");
     }
 
-    /**This command is similar to dependencyCheckAnalyze,
-     *  but runs with a higher information level that provides more detail in the output.
-     *  This is useful for debugging and more detailed analysis.*/
-    public static void dependencyCheckAnalyzeInfo(){
+    /**
+     * This command is similar to dependencyCheckAnalyze,
+     * but runs with a higher information level that provides more detail in the output.
+     * This is useful for debugging and more detailed analysis.
+     */
+    public static void dependencyCheckAnalyzeInfo() {
         runShellCommandGradlew("./gradlew dependencyCheckAnalyze --info");
     }
 
-    /**This command is similar to dependencyCheckAnalyze but with the scan feature,
-     *  which provides additional information about the analysis process and dependencies.*/
-    public static void dependencyCheckAnalyzeScan(){
+    /**
+     * This command is similar to dependencyCheckAnalyze but with the scan feature,
+     * which provides additional information about the analysis process and dependencies.
+     */
+    public static void dependencyCheckAnalyzeScan() {
         runShellCommandGradlew("./gradlew dependencyCheckAnalyze --scan");
     }
 }
