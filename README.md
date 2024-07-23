@@ -20,7 +20,7 @@ Use this dependency in your build.gradle file to reference this library in your 
 # Step 1
 Add the JitPack repository to your build file. Add it in your root build.gradle at the end of repositories:
 
-`  buildscript {
+`buildscript {
     repositories {
         mavenCentral()
     }
@@ -54,7 +54,7 @@ and add
 dependencies {
  implementation 'com.github.owaspJafar:owaspScanningJarDependency:1.0.6'
 
-}  `
+}`
 
 
  
