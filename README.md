@@ -58,7 +58,14 @@ LibraryJafar.reportJsonParserJafar( );
 
 ```
 
+# Result
+
+![Result](https://s8.uupload.ir/files/result_vaht.jpg)
+
+
+# Run in   intellij IDEA
  
+![Result](https://s8.uupload.ir/files/inteljay_5esr.jpg)
 
  
 
