@@ -56,6 +56,6 @@ dependencies {
 
 }`
 
-
+`maven { url 'https://jitpack.io' }`
  
 
