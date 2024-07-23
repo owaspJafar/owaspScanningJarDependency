@@ -19,8 +19,8 @@ Use this dependency in your build.gradle file to reference this library in your 
 
 # Step 1
 Add the JitPack repository to your build file. Add it in your root build.gradle at the end of repositories:
-
-	```
+ ---
+ ```
 buildscript {
     repositories {
         mavenCentral()
