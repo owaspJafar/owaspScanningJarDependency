@@ -8,25 +8,19 @@ This library has been developed to make it easier for programmers to use [owasp:
 # Dependency application
 
 Find dependencies that are vulnerable and dangerous for commercial applications
+
 ---
+
 # Usages
+
 ---
 
 Use this dependency in your build.gradle file to reference this library in your project
 
 # Step 1
 Add the JitPack repository to your build file. Add it in your root build.gradle at the end of repositories:
-`allprojects {
-        repositories {
-            ...
-            maven { url "https://jitpack.io" }
-        }
-    }`
 
-
-add code  to File build.gradle in intellij idea
-
-buildscript {
+`  buildscript {
     repositories {
         mavenCentral()
     }
@@ -60,4 +54,8 @@ and add
 dependencies {
  implementation 'com.github.owaspJafar:owaspScanningJarDependency:1.0.6'
 
-}
+}  `
+
+
+ 
+
