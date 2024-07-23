@@ -67,5 +67,11 @@ LibraryJafar.reportJsonParserJafar( );
  
 ![Result](https://s8.uupload.ir/files/inteljay_5esr.jpg)
 
+# scan singel Library
+
+```
+LibraryJafar.scanLibrary("commons-exec" );
+```
+
  
 
