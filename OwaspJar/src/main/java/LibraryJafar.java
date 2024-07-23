@@ -73,39 +73,28 @@ public class LibraryJafar {
     public static ArrayList<String> reportJsonParserJafar( ){
         if (readFile()!=null) {
             JSONObject jsonObject = new JSONObject(Objects.requireNonNull(readFile()));
-
             JSONArray dependencies = jsonObject.getJSONArray("dependencies");
-
             logger.info("OWASP scanning jafar: List of books that are vulnerable");
-
             ArrayList<String> listNot = new ArrayList<>();
             ArrayList<String> listVulnerabilities = new ArrayList<>();
-
             for (int i = 0; i < dependencies.length(); i++) {
                 JSONObject dependenciesJsonObject = dependencies.getJSONObject(i);
                 try {
-
                     if (dependenciesJsonObject.has("vulnerabilities") && dependenciesJsonObject.get("vulnerabilities") instanceof JSONArray) {
                         JSONArray vulnerabilities = dependenciesJsonObject.getJSONArray("vulnerabilities");
-
                         String severity = vulnerabilities.getJSONObject(0).getString("severity");
                         String fileName = dependenciesJsonObject.getString("fileName");
-
                         listVulnerabilities.add(fileName);
                         logger.info("OWASP scanning jafar:\t" + fileName + "\t-------------------->      Highest Severity = " + severity);
-
                     } else {
                         String fileName = dependenciesJsonObject.getString("fileName");
                         listNot.add("OWASP scanning jafar:\t" + fileName);
                     }
-
-
                 } catch (Exception e) {
                     System.out.println(" " + e.getMessage());
                     e.fillInStackTrace();
                 }
             }
-
             logger.info("\n\n\n");
             logger.info("OWASP scanning jafar: List of books that are not vulnerable");
             for (String s : listNot) {

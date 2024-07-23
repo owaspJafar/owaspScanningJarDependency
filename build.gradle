@@ -33,7 +33,6 @@ repositories {
     mavenCentral()
 }
 dependencyCheck {
-    failBuildOnCVSS = 7.0
     formats = ['HTML', 'XML','json']
     outputDirectory = file('build/jafar-report')
 

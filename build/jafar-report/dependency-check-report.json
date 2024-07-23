@@ -5,11 +5,11 @@
     "dataSource": [
       {
         "name": "NVD CVE Checked",
-        "timestamp": "2024-07-20T16:16:14"
+        "timestamp": "2024-07-23T17:09:10"
       },
       {
         "name": "NVD CVE Modified",
-        "timestamp": "2024-07-20T15:30:01"
+        "timestamp": "2024-07-23T15:30:00"
       },
       {
         "name": "VersionCheckOn",
@@ -22,7 +22,7 @@
     "groupID": "org.example",
     "artifactID": "makeLibrary",
     "version": "1.0",
-    "reportDate": "2024-07-20T16:41:03.223400600Z",
+    "reportDate": "2024-07-23T13:39:20.251600600Z",
     "credits": {
       "NVD": "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
       "NPM": "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
