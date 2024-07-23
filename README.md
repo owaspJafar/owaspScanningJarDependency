@@ -29,6 +29,10 @@ buildscript {
         classpath 'org.owasp:dependency-check-gradle:3.1.2'
     }
 }
+plugins {
+    id 'java'
+    id 'org.owasp.dependencycheck' version '6.2.2'
+}
 ```
 
 
