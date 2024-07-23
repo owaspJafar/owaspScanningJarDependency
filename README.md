@@ -50,6 +50,14 @@ dependencies {
 https://s8.uupload.ir/files/qqq_td60.jpg
 ![Result](https://s8.uupload.ir/files/qqq_td60.jpg)
 
+
+# sample code
+```
+LibraryJafar.dependencyCheckAnalyze( );
+LibraryJafar.reportJsonParserJafar( );
+
+```
+
  
 
  
