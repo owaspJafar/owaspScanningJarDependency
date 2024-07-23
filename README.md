@@ -1,4 +1,7 @@
-add code 
+how to use library ?
+
+
+add code  to build.gradle in intellij idea
 
 buildscript {
     repositories {
@@ -27,5 +30,11 @@ dependencyCheck {
     formats = ['HTML', 'XML','json']
     outputDirectory = file('build/jafar-report')
 
+
+}
+
+and add 
+dependencies {
+ implementation 'com.github.owaspJafar:owaspScanningJarDependency:1.0.6'
 
 }
