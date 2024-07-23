@@ -1,7 +1,7 @@
 how to use library ?
 
 
-add code  to build.gradle in intellij idea
+add code  to File build.gradle in intellij idea
 
 buildscript {
     repositories {
