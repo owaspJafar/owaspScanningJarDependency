@@ -47,8 +47,8 @@ dependencies {
     implementation 'com.github.owaspJafar:owaspScanningJarDependency:1.0.6'
 }
 ```
-
-![Result]([image.jpg](https://s8.uupload.ir/files/qqq_td60.jpg))
+https://s8.uupload.ir/files/qqq_td60.jpg
+![Result](https://s8.uupload.ir/files/qqq_td60.jpg)
 
  
 
