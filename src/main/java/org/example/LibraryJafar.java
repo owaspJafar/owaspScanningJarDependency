@@ -16,6 +16,12 @@ import java.util.Objects;
  */
 public class LibraryJafar {
     private static final org.slf4j.Logger logger = LoggerFactory.getLogger(Main.class);
+    private static String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+
+    public static final String ANSI_RESET = "\u001B[0m";
 
 
     public static void main(String[] args) {
@@ -28,9 +34,9 @@ public class LibraryJafar {
      * Enter the name of the Library dependency and let it scan
      */
     public static void scanLibrary(String nameLibrary) {
-        ArrayList<String> listLib=new ArrayList<>();
+        ArrayList<String> listLib = new ArrayList<>();
         listLib.addAll(reportJsonParserJafar());
-        logger.info("\n\n\n\n\n");
+        logger.info("\n\n***********************************************************************************************************************************************" + "\n");
 
 
         boolean isVulnerable = false;
@@ -42,11 +48,12 @@ public class LibraryJafar {
         }
 
 
-        if (isVulnerable){
-            logger.info("OWASP scanning jafar: "+nameLibrary +"---------> This library is vulnerable");
-        }else {
-            logger.info("OWASP scanning jafar: "+nameLibrary +"---------> This library is not vulnerable");
+        if (isVulnerable) {
+            logger.info(ANSI_YELLOW + "OWASP scanning jafar: " + nameLibrary + "---------> This library is vulnerable" + ANSI_RESET);
+        } else {
+            logger.info(ANSI_GREEN + "OWASP scanning jafar: " + nameLibrary + "---------> This library is not vulnerable" + ANSI_RESET);
         }
+        logger.info("\n\n***********************************************************************************************************************************************");
     }
 
     /**
@@ -70,13 +77,13 @@ public class LibraryJafar {
      *
      * @return
      */
-    public static ArrayList<String> reportJsonParserJafar( ){
-        if (readFile()!=null) {
+    public static ArrayList<String> reportJsonParserJafar() {
+        if (readFile() != null) {
             JSONObject jsonObject = new JSONObject(Objects.requireNonNull(readFile()));
 
             JSONArray dependencies = jsonObject.getJSONArray("dependencies");
 
-            logger.info("OWASP scanning jafar: List of books that are vulnerable");
+            logger.info(ANSI_BLUE + "OWASP scanning jafar:" + ANSI_RED + " List of Library that are vulnerable" + ANSI_RESET);
 
             ArrayList<String> listNot = new ArrayList<>();
             ArrayList<String> listVulnerabilities = new ArrayList<>();
@@ -92,11 +99,11 @@ public class LibraryJafar {
                         String fileName = dependenciesJsonObject.getString("fileName");
 
                         listVulnerabilities.add(fileName);
-                        logger.info("OWASP scanning jafar:\t" + fileName + "\t-------------------->      Highest Severity = " + severity);
+                        logger.info(ANSI_BLUE + "OWASP scanning jafar:\t" + ANSI_RED + fileName + "\t-------------------->      Highest Severity = " + severity + "" + ANSI_RESET);
 
                     } else {
                         String fileName = dependenciesJsonObject.getString("fileName");
-                        listNot.add("OWASP scanning jafar:\t" + fileName);
+                        listNot.add(ANSI_BLUE + "OWASP scanning jafar:\t" + ANSI_GREEN + fileName + ANSI_RESET);
                     }
 
 
@@ -106,18 +113,22 @@ public class LibraryJafar {
                 }
             }
 
-            logger.info("\n\n\n");
-            logger.info("OWASP scanning jafar: List of books that are not vulnerable");
+            logger.info("\n" + ANSI_RESET);
+            logger.info(ANSI_BLUE + "OWASP scanning jafar:" + ANSI_GREEN + " List of Library that are not vulnerable" + ANSI_RESET);
             for (String s : listNot) {
                 logger.info(s);
             }
+            logger.info(ANSI_RESET);
             return listVulnerabilities;
         }
         return null;
     }
-    /**Reading the report.json file*/
-    private static String readFile( ) {
-        String filePath="build/jafar-report/dependency-check-report.json";
+
+    /**
+     * Reading the report.json file
+     */
+    private static String readFile() {
+        String filePath = "build/jafar-report/dependency-check-report.json";
         StringBuilder content = new StringBuilder();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;

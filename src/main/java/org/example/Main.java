@@ -7,9 +7,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LibraryJafar.dependencyCheckAnalyze();
-        //LibraryJafar.showReportJsonLogCat();
-       LibraryJafar.scanLibrary("json-20171018");
+        //LibraryJafar.dependencyCheckAnalyze();
+       // LibraryJafar.showReportJsonLogCat();
+        LibraryJafar.scanLibrary("json-20171018");
 
 
 
